@@ -16,12 +16,17 @@ public class HomePage {
         return new LoginPage(driver);
     }
 
-    public DropdownPage clickDropdown(){
+    public DropdownPage clickDropdown() {
         clickLink("Dropdown");
         return new DropdownPage(driver);
     }
 
-    private void clickLink(String linkText){
+    public HoversPage clickHovers() {
+        clickLink("Hovers");
+        return new HoversPage(driver);
+    }
+
+    private void clickLink(String linkText) {
         driver.findElement(By.linkText(linkText)).click();
     }
 }

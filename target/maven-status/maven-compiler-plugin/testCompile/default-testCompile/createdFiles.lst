@@ -1,1 +1,3 @@
 base/BaseTests.class
+dropdown/DropdownTests.class
+Login/LoginTests.class
